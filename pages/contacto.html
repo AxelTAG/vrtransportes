@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <!-- Head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>VRTransportes y Logística</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Importación de Bootstrap. -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Importación de Bootstrap. -->
+    <link rel="stylesheet" href="../css/estilos.css"> <!-- Importación de estilos CSS. -->
 </head>
 
 
@@ -15,98 +18,120 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Top header con información de contacto. -->
-        <div class="container32px bkgBlack">
-            <ul>
-                <li><a href="mailto:vrodrigueztransportes@gmail.com"><img src="../img/mail_icon.svg" alt="Email">vrodrigueztransportes@gmail.com</a></li>
-                <li><p><img src="../img/time_icon.svg" alt="Horario">7:00hs - 18:00hs</p></li>
-                <li><a href="https://wa.me/5492241696400" target="_blank"><img src="../img/phone_icon.svg" alt="Telefono">+54 9 2241 69-6400</a></li>
-                <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank"><img src="../img/map_icon.svg" alt="Ubicacion">Buenos Aires, Argentina</a></li>
-            </ul>
+        <div class=container-fluid>
+            <!-- Top header con información de contacto. -->
+            <div class="row bg-dark">
+                <div class="col-12 col-md-8 offset-md-4">
+                    <ul class="mb-0 pt-2 pb-2 pe-2 d-flex justify-content-end align-items-center list-unstyled">
+                        <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank"><img src="../img/map_icon.svg" alt="Ubicacion" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block svrt-hover"><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank" class="fs-6 text-decoration-none text-light">Buenos Aires, Argentina</a></li>
+                        <li><a href="https://wa.me/5492241696400" target="_blank"><img src="../img/phone_icon.svg" alt="Telefono" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block"><a href="https://wa.me/5492241696400" target="_blank" class="fs-6 text-decoration-none text-light">+54 9 2241 69-6400</a></li>
+                        <li class="d-none d-sm-block"><p class="mb-0 fs-6 text-decoration-none text-light"><img src="../img/time_icon.svg" alt="Horario" class="ps-2 pe-1">7:00hs - 18:00hs</p></li>
+                        <li><a href="mailto:vrodrigueztransportes@gmail.com"><img src="../img/mail_icon.svg" alt="Email" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block"><a href="mailto:vrodrigueztransportes@gmail.com" class="fs-6 text-decoration-none text-light">vrodrigueztransportes@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="row">
+                <div class="col-12 mt-1 mb-1">
+                    <a href="../index.html"><img src="../img/logo_VRT_bg_out.png" alt="Logo VRTransportes" class="m-0 p-0 img-fluid"></a>
+                </div>
+            </div>
         </div>
-        <!-- Logo -->
-        <div class="container96px centerVt">
-            <a href="../index.html"><img src="../img/logo_VRT_bg_out.png" alt="Logo_VRTransportes"></a>
-        </div>
+
         <!-- Panel de naveción. -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" class="pegatina">INICIO</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./flota.html">FLOTA</a>
-                </li>
-                <li>
-                    <a href="./cargasegura.html">CARGA SEGURA</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-0">
+            <button class="navbar-toggler ms-auto me-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto ms-4">
+                    <li class="nav-item ps-1">
+                        <a class="nav-link py-3 fs-5 text-light" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item ps-1">
+                        <a class="nav-link py-3 fs-5 text-light" href="./nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item ps-1">
+                        <a class="nav-link py-3 fs-5 text-light" href="./flota.html">FLOTA</a>
+                    </li>
+                    <li class="nav-item ps-1">
+                        <a class="nav-link py-3 fs-5 text-light" href="./cargasegura.html">CARGA SEGURA</a>
+                    </li>
+                    </li>
+                    <li class="nav-item ps-1">
+                        <a class="nav-link py-3 fs-5 text-light" href="./contacto.html">CONTACTO</a>
+                    </li>  
+                </ul>
+            </div> 
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="container-fluid pb-5 bg-light">
         <!-- Título de sección. -->
-        <div class="container48px centerVt bkgGray whiteText">
-            <h1>CONTACTO</h1>
+        <div class="row mb-5 bg-secondary">
+            <h1 class="col-12 m-0 pt-1 pb-1 text-light">CONTACTO</h1>
         </div>
+
         <!-- Sección de texto con imagen. -->
-        <section class="container512px centerHzAll tpadding32px spadding64px plateText">
+        <section class="row">
             <!-- Texto centrado. -->
-            <p class="pStandard">Queremos brindarle el mejor servicio posible.
-                Por eso nuestro trabajo comienza desde el asesoramiento inicial.</p>
-            <!-- Columna izquierda (maps de Google). -->
-            <div class="column left tpadding32px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103830.14429532601!2d-58.0961078297701!3d-35.58599299878258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95980d577cda3ee5%3A0xe0e8cfd3969bd45f!2sChascom%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682379973906!5m2!1ses-419!2sar" width="400" height="368" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            <!-- Columna derecha. -->
-            <div class="column right lTextAlign tpadding32px">
-                <p class="pStandard"><strong>Nos ubicamos en:</strong></p>
-                <p class="pStandard">Buenos Aires, Argentina</p>  
-                <p class="pStandard"><strong>Llamanos y chatea:</strong></p>
-                <p class="pStandard">+54 9 2241 69-6400</p>
-                <p class="pStandard"><strong>Horario:</strong></p>
-                <p class="pStandard">07:00hs - 18:00hs</p>
-                <p class="pStandard"><strong>Escribinos a:</strong></p>
-                <p class="pStandard">vrodrigueztransportes@gmail.com</p>
+            <div>
+            <p class="mb-4 text-center fs-5 text-dark">Queremos brindarle el mejor servicio posible. Por eso nuestro trabajo comienza desde el asesoramiento inicial.</p>
             </div>
+
+            <!-- Columna izquierda (texto). -->
+            <div class="col-12 col-md-4 offset-md-1">
+                <p class="mb-4 text-center text-md-end fs-5 text-dark"><strong>Nos ubicamos en:</strong><br>Buenos Aires, Argentina</p>  
+                <p class="mb-4 text-center text-md-end fs-5 text-dark"><strong>Llamanos y chatea:</strong><br>+54 9 2241 69-6400</p>
+                <p class="mb-4 text-center text-md-end fs-5 text-dark"><strong>Horario:</strong><br>07:00hs - 18:00hs</p>
+                <p class="mb-4 text-center text-md-end fs-5 text-dark"><strong>Escribinos a:</strong><br>vrodrigueztransportes@gmail.com</p>
+            </div>
+            
+            <!-- Columna derecha (maps de Google). -->
+            <div class="col-12 col-md-4 offset-md-1 pt-2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103830.14429532601!2d-58.0961078297701!3d-35.58599299878258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95980d577cda3ee5%3A0xe0e8cfd3969bd45f!2sChascom%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682379973906!5m2!1ses-419!2sar" width="400" height="368" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </section>
     </main>
 
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
-        <!-- Sección de información de contacto y panel de navegación inferior. -->
-        <section class="container160px tpadding16px bkgGray">
-            <div class="column left">
+        <div class="container-fluid">
+            <!-- Sección de información de contacto y panel de navegación inferior. -->
+            <section class="row pt-3 pb-3 bg-secondary">
                 <!-- Lista de información de contacto. -->
-                <ul class="rTextAlign">
-                    <li><strong class="whiteText">Información</strong></li>
-                    <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank">Buenos Aires, Argentina</a></li>
-                    <li><a href="https://wa.me/5492241696400" target="_blank">+54 9 2241 69-6400</a></li>
-                    <li><p>7:00hs - 18:00hs</p></li>
-                    <li><a href="mailto:vrodrigueztransportes@gmail.com">vrodrigueztransportes@gmail.com</a></li>
-                </ul>
+                <div class="col-6 pe-3 pe-md-5 border-end">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><strong class="pb-2 d-flex justify-content-end text-light">Información</strong></li>
+                        <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank" class="d-flex justify-content-end text-break text-decoration-none text-light">Buenos Aires, Argentina</a></li>
+                        <li><a href="https://wa.me/5492241696400" target="_blank" class="d-flex justify-content-end text-decoration-none text-light">+54 9 2241 69-6400</a></li>
+                        <li><p class="m-0 d-flex justify-content-end text-decoration-none text-light">7:00hs - 18:00hs</p></li>
+                        <li><a href="mailto:vrodrigueztransportes@gmail.com" class="d-flex justify-content-end text-break text-decoration-none text-light">vrodrigueztransportes@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Lista de panel de navegación inferior. -->
+                <div class="col-6 ps-3 ps-md-5 border-start">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><strong class="pb-2 d-flex justify-content-start text-light">Más</strong></li>
+                        <li><a href="../index.html" class="text-decoration-none text-light">Inicio</a></li>
+                        <li><a href="./nosotros.html" class="text-decoration-none text-light">Nosotros</a></li>
+                        <li><a href="./flota.html" class="text-decoration-none text-light">Flota</a></li>
+                        <li><a href="./cargasegura.html" class="text-decoration-none text-light">Carga segura</a></li>
+                        <li><a href="./contacto.html" class="text-decoration-none text-light">Contacto</a></li>
+                    </ul>
+                </div>
+            </section>
+        
+            <!-- Div de Copyright. -->
+            <div class="row bg-dark">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="m-0 p-2 fs-6 text-light">© 2023 Copyright</p>
+                </div>
             </div>
-            <div class=" column left borderFooter">
-                <!-- Lista de panel de navegación inferior. -->      
-                <ul class="lTextAlign">
-                    <li><strong class="whiteText">Más</strong></li>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./flota.html">Flota</a></li>
-                    <li><a href="./cargasegura.html">Carga segura</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Div de Copyright. -->
-        <div class="container32px centerVt bkgBlack">
-            <p class="centerHzAll whiteText fontSize12px">© 2023 Copyright</p>
         </div>
     </footer>
 </body>
