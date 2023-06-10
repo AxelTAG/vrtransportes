@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VRTransportes y Logística</title>
-<!--     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" href="./css/estilos.css">  <!-- Importación de estilos CSS. -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- Importación de Bootstrap. -->
+    <script src="./js/bootstrap.min.js"></script> <!-- Importación de Bootstrap. -->
+    <link rel="stylesheet" href="./css/estilos.css"> <!-- Importación de estilos CSS. -->
 </head>
 
 
@@ -18,102 +18,133 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Top header con información de contacto. -->
-        <div class="container32px bkgBlack">
-            <ul>
-                <li><a href="mailto:vrodrigueztransportes@gmail.com"><img src="img/mail_icon.svg" alt="Email">vrodrigueztransportes@gmail.com</a></li>
-                <li><p><img src="./img/time_icon.svg" alt="Horario">7:00hs - 18:00hs</p></li>
-                <li><a href="https://wa.me/5492241696400" target="_blank"><img src="./img/phone_icon.svg" alt="Telefono">+54 9 2241 69-6400</a></li>
-                <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank"><img src="./img/map_icon.svg" alt="Ubicacion">Buenos Aires, Argentina</a></li>
-            </ul>
+        <div class=container-fluid>
+            <!-- Top header con información de contacto. -->
+            <div class="row bg-dark">
+                <div class="col-12 col-md-8 offset-md-4">
+                    <ul class="mb-0 pt-2 pb-2 pe-2 d-flex justify-content-end align-items-center list-unstyled">
+                        <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank"><img src="./img/map_icon.svg" alt="Ubicacion" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block svrt-hover"><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank" class="fs-6 text-decoration-none text-light">Buenos Aires, Argentina</a></li>
+                        <li><a href="https://wa.me/5492241696400" target="_blank"><img src="./img/phone_icon.svg" alt="Telefono" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block"><a href="https://wa.me/5492241696400" target="_blank" class="fs-6 text-decoration-none text-light">+54 9 2241 69-6400</a></li>
+                        <li class="d-none d-sm-block"><p class="mb-0 fs-6 text-decoration-none text-light"><img src="./img/time_icon.svg" alt="Horario" class="ps-2 pe-1">7:00hs - 18:00hs</p></li>
+                        <li><a href="mailto:vrodrigueztransportes@gmail.com"><img src="img/mail_icon.svg" alt="Email" class="ps-2 pe-1"></a></li>
+                        <li class="d-none d-sm-block"><a href="mailto:vrodrigueztransportes@gmail.com" class="fs-6 text-decoration-none text-light">vrodrigueztransportes@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="row">
+                <div class="col-12 mt-1 mb-1">
+                    <a href="./index.html"><img src="./img/logo_VRT_bg_out.png" alt="Logo VRTransportes" class="m-0 p-0 img-fluid"></a>
+                </div>
+            </div>
         </div>
-        <!-- Logo -->
-        <div class="container96px centerVt">
-            <a href="./index.html"><img src="./img/logo_VRT_bg_out.png" alt="Logo VRTransportes"></a>
-        </div>
+
         <!-- Panel de naveción. -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html" class="pegatina">INICIO</a>
-                </li>
-                <li>
-                    <a href="pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./pages/flota.html">FLOTA</a>
-                </li>
-                <li>
-                    <a href="./pages/cargasegura.html">CARGA SEGURA</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-0">
+            <button class="navbar-toggler ms-auto me-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto px-4">
+                    <li class="nav-item">
+                        <a class="nav-link ps-1 py-3 fs-5 text-light" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-1 py-3 fs-5 text-light" href="./pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-1 py-3 fs-5 text-light" href="./pages/nosotros.html">FLOTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-1 py-3 fs-5 text-light" href="./pages/cargasegura.html">CARGA SEGURA</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-1 py-3 fs-5 text-light" href="./pages/contacto.html">CONTACTO</a>
+                    </li>  
+                </ul>
+            </div> 
         </nav>
     </header>
+    
 
     <!-- Main -->
-    <main>
+    <main class="container-fluid pb-5 bg-light">
         <!-- Imagen de presentación (posible slider). -->
-        <div class="panoramic">
-            <p class="lPadding16px panoramicBox">COMPROMISO Y SEGURIDAD</p>
+        <div class="row position-relative svrt-panoramic">
+            <p class="col-12 top-0 mt-3 ps-2 fs-5 bg-dark bg-opacity-50 svrt-panoramicBox">COMPROMISO Y SEGURIDAD</p>
         </div>
+
         <!-- Título de sección. -->
-        <div class="container48px centerVt bkgGray whiteText">
-            <h1>INICIO</h1>
+        <div class="row mb-5 bg-secondary">
+                <h1 class="col-12 m-0 pt-1 pb-1 text-light">INICIO</h1>
         </div>
-        <section class="centerHzAll tpadding32px spadding64px plateText">
-            <p class="pStandard">En VRTransportes, nos enorgullecemos de ofrecer un servicio de alta calidad que se basa en nuestra experiencia en la industria y en nuestro compromiso con la confianza y seguridad. Nuestro equipo de conductores altamente capacitados y experimentados se asegura de que su carga llegue a su destino en perfectas condiciones y en el plazo acordado.</p>
-            <p class="pStandard">Si está buscando una empresa de transporte de cargas y logística confiable y eficiente en la Provincia de Buenos Aires <br> ¡Contáctenos hoy mismo y descubra cómo VRTransportes puede ayudarlo a transportar su carga con seguridad y eficacia!</p>
+
+        <!-- Sección de texto y tarjetas. -->
+        <!-- Texto -->
+        <section class="row mb-3">
+            <div class="col-12 col-md-10 offset-md-1 d-flex justify-content-center">
+                <p class="text-center fs-5 text-dark">En VRTransportes, nos enorgullecemos de ofrecer un servicio de alta calidad que se basa en nuestra experiencia en la industria y en nuestro compromiso con la confianza y seguridad. Nuestro equipo de conductores altamente capacitados y experimentados se asegura de que su carga llegue a su destino en perfectas condiciones y en el plazo acordado.</p>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 d-flex justify-content-center">
+                <p class="text-center fs-5 text-dark">Si está buscando una empresa de transporte de cargas y logística confiable y eficiente en la Provincia de Buenos Aires <br> ¡Contáctenos hoy mismo y descubra cómo VRTransportes puede ayudarlo a transportar su carga con seguridad y eficacia!</p>    
+            </div>
         </section>
-        <!-- Sección de tarjetas. -->
-        <section class="container384px centerHz1000px padding64px blackText fontSize16px">
-            <div class="card centerHzAll">
-                <img src="./img/trusted_shops.svg" alt="Experiencia" class="cardImg">
-                <p><strong>Más de 10 años de experiencia en la industria.</strong></p>
+        <!-- Tarjetas -->
+        <section class="row d-flex-md">
+            <div class="col-10 offset-1 col-md-2 offset-md-2 mt-2 mb-2 p-4 d-flex flex-column justify-content-center align-items-center bg-secondary bg-opacity-50 rounded-pill">
+                <img src="./img/trusted_shops.svg" alt="Experiencia" class="w-50">
+                <p class="text-center"><strong>Más de 10 años de experiencia en la industria.</strong></p>
             </div>
-            <div class="card centerHzAll">
-                <img src="./img/gps.svg" alt="Satelital GPS" class="cardImg">
-                <p><strong>Carga asegurada y monitoreada con GPS.</strong></p>
+            <div class="col-10 offset-1 col-md-2 mt-2 mb-1 p-4 d-flex flex-column justify-content-center align-items-center bg-secondary bg-opacity-50 rounded-pill">
+                <img src="./img/gps.svg" alt="Satelital GPS" class="w-50">
+                <p class="text-center"><strong>Carga asegurada y monitoreada con GPS.</strong></p>
             </div>
-            <div class="card centerHzAll">
-                <img src="./img/trusted_organization.svg" alt="Compromiso" class="cardImg">
-                <p><strong>Compromiso con los plazos de entrega.</strong></p>
-            </div> 
+            <div class="col-10 offset-1 col-md-2 mt-2 mb-1 p-4 d-flex flex-column justify-content-center align-items-center bg-secondary bg-opacity-50 rounded-pill">
+                <img src="./img/trusted_organization.svg" alt="Compromiso" class="align-self-center w-50">
+                <p class="text-center"><strong>Compromiso con los plazos de entrega.</strong></p>
+            </div>
         </section>
     </main>
 
 
     <!-- Footer -->
     <footer>
-        <!-- Sección de información de contacto y panel de navegación inferior. -->
-        <section class="container160px tpadding16px bkgGray">
-            <div class="column left">
+        <div class="container-fluid">
+            <!-- Sección de información de contacto y panel de navegación inferior. -->
+            <section class="row pt-3 pb-3 bg-secondary">
                 <!-- Lista de información de contacto. -->
-                <ul class="rTextAlign">
-                    <li><strong class="whiteText">Información</strong></li>
-                    <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank">Buenos Aires, Argentina</a></li>
-                    <li><a href="https://wa.me/5492241696400" target="_blank">+54 9 2241 69-6400</a></li>
-                    <li><p>7:00hs - 18:00hs</p></li>
-                    <li><a href="mailto:vrodrigueztransportes@gmail.com">vrodrigueztransportes@gmail.com</a></li>
-                </ul>
+                <div class="col-6 pe-3 pe-md-5 border-end">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><strong class="pb-2 d-flex justify-content-end text-light">Información</strong></li>
+                        <li><a href="https://goo.gl/maps/hmt7FHUP98uuvHxeA" target="_blank" class="d-flex justify-content-end text-break text-decoration-none text-light">Buenos Aires, Argentina</a></li>
+                        <li><a href="https://wa.me/5492241696400" target="_blank" class="d-flex justify-content-end text-decoration-none text-light">+54 9 2241 69-6400</a></li>
+                        <li><p class="m-0 d-flex justify-content-end text-decoration-none text-light">7:00hs - 18:00hs</p></li>
+                        <li><a href="mailto:vrodrigueztransportes@gmail.com" class="d-flex justify-content-end text-break text-decoration-none text-light">vrodrigueztransportes@gmail.com</a></li>
+                    </ul>
+                </div>
+                <!-- Lista de panel de navegación inferior. -->
+                <div class="col-6 ps-3 ps-md-5 border-start">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><strong class="pb-2 d-flex justify-content-start text-light">Más</strong></li>
+                        <li><a href="#top" class="text-decoration-none text-light">Inicio</a></li>
+                        <li><a href="./pages/nosotros.html" class="text-decoration-none text-light">Nosotros</a></li>
+                        <li><a href="./pages/flota.html" class="text-decoration-none text-light">Flota</a></li>
+                        <li><a href="./pages/cargasegura.html" class="text-decoration-none text-light">Carga segura</a></li>
+                        <li><a href="./pages/contacto.html" class="text-decoration-none text-light">Contacto</a></li>
+                    </ul>
+                </div>
+            </section>
+        
+            <!-- Div de Copyright. -->
+            <div class="row bg-dark">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="m-0 p-2 fs-6 text-light">© 2023 Copyright</p>
+                </div>
             </div>
-            <div class=" column left borderFooter">
-                <!-- Lista de panel de navegación inferior. -->    
-                <ul class="lTextAlign">
-                    <li><strong class="whiteText">Más</strong></li>
-                    <li><a href="#top">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/flota.html">Flota</a></li>
-                    <li><a href="./pages/cargasegura.html">Carga segura</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Div de Copyright. -->
-        <div class="container32px centerVt bkgBlack">
-            <p class="centerHzAll whiteText fontSize12px">© 2023 Copyright</p>
         </div>
     </footer>
 </body>
