@@ -1,0 +1,30 @@
+/* Estilo de body */
+/* Estilo de header */
+
+header div div div ul li a:hover {
+    text-decoration: underline !important;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black !important;
+}
+
+/* Estilo de main */
+.svrt-panoramic {
+    height: 30rem;
+    background-image: url("../img/panoramica.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.svrt-panoramicBox {
+    display: block;
+    height: 2rem;
+}
+
+/* Estilo de footer */
+footer ul li a:hover {
+    text-decoration: underline !important;
+}
