@@ -1,7 +1,13 @@
+@charset "UTF-8";
 /* Importacion de estilos scss */
 /* Modules */
+/* Importación utilidades. */ /* Mixins. */
 /* Estilo de body */
 /* Estilo de header */
+.svrt-fs-6 {
+  font-size: 0.85rem;
+}
+
 header div div div ul li a:hover {
   text-decoration: underline !important;
 }
@@ -25,6 +31,21 @@ nav a:hover {
   height: 2rem;
 }
 
+@media (max-width: 575px) {
+  .svrt-card-img-w {
+    width: 25%;
+  }
+}
+@media (min-width: 576px) {
+  .svrt-card-img-w {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .svrt-card-img-w {
+    width: 75%;
+  }
+}
 /* Estilo de footer */
 footer ul li a:hover {
   text-decoration: underline !important;

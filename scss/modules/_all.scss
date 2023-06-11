@@ -1,8 +1,15 @@
+/* Importación utilidades. */
+@import "./utility";
+
 /* Estilo de body */
 /* Estilo de header */
 
+.svrt-fs-6 {
+    font-size: 0.85rem;
+}
+
 header div div div ul li a:hover {
-    text-decoration: underline !important;
+    @include underline(1);
 }
 
 nav a:hover {
@@ -24,7 +31,26 @@ nav a:hover {
     height: 2rem;
 }
 
+$card-img-w:(none-w:25%, sm-w:40%, md-w:75%);
+@media (max-width: 575px) {
+    .svrt-card-img-w {
+        width: map-get($card-img-w, none-w)
+    }
+}
+
+@media (min-width: 576px) {
+    .svrt-card-img-w {
+        width: map-get($card-img-w, sm-w)
+    }
+}
+
+@media (min-width: 768px) {
+    .svrt-card-img-w {
+        width: map-get($card-img-w, md-w)
+    }
+}
+
 /* Estilo de footer */
 footer ul li a:hover {
-    text-decoration: underline !important;
+    @include underline(1);
 }

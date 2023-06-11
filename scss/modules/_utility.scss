@@ -1,0 +1,12 @@
+/* Mixins. */
+@mixin underline($active) {
+    @if $active == 1 {
+        text-decoration: underline !important;
+    }
+    @else if $active == 0 {
+        text-decoration: underline;
+    }
+    @else {
+        text-decoration: underline;
+    }
+}
